@@ -7,4 +7,71 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#347ab8</color>
+    <color name="colorPrimaryDark">#296192</color>
+    <color name="colorAccent">#1976D2</color>
+    <color name="status_bar_background">#296192</color>
+    <color name="navigation_bar_background">#347ab8</color>
+
+    <color name="signal_bar">#347ab8</color>
+    <color name="signal_bar_non_active">#AAAAAA</color>
+
+    <color name="disconnect_button">#347ab8</color>
+
+    <color name="fragment_console_background">#ffffff</color>
+
+
+    <color name="fragment_device_background">#f0f0ff</color>
+    <color name="fragment_device_label">#666</color>
+    <color name="fragment_device_value">#333</color>
+
+    <color name="fragment_ble_background">#f0f0ff</color>
+    <color name="fragment_ble_label">#666</color>
+    <color name="fragment_ble_value">#333</color>
+
+    <color name="fragment_i2c_background">#f0f0ff</color>
+    <color name="fragment_i2c_label">#666</color>
+    <color name="fragment_i2c_value">#333</color>
+
+    <color name="fragment_spi_background">#f0f0ff</color>
+    <color name="fragment_spi_label">#666</color>
+    <color name="fragment_spi_value">#333</color>
+
+    <color name="fragment_misc_background">#f0f0ff</color>
+    <color name="fragment_misc_label">#666</color>
+    <color name="fragment_misc_value">#333</color>
+
+    <color name="fragment_security_background">#f0f0ff</color>
+    <color name="fragment_security_label">#666</color>
+    <color name="fragment_security_value">#333</color>
+    <color name="fragment_security_entry_list_label_color">#333</color>
+    <color name="fragment_security_entry_list_background">#8c000000</color>
+
+
+    <color name="fragment_data_background">#f0f0ff</color>
+    <color name="fragment_data_label">#666</color>
+    <color name="fragment_data_value">#333</color>
+
+    <color name="radio_unchecked">#ffffff</color>
+    <color name="radio_unchecked_pressed">#f8f8f8</color>
+    <color name="radio_checked">#347ab8</color>
+    <color name="dsps_fragment_background">#f5f5f5</color>
+    <color name="dsps_console_background">#ffffff</color>
+    <color name="dsps_console_stroke">#000000</color>
+    <color name="dsps_button_background">#ffffff</color>
+    <color name="dsps_button_background_pressed">#296192</color>
+    <color name="dsps_button_stroke">#296192</color>
+    <color name="dsps_button_text">#347ab8</color>
+    <color name="dsps_button_text_pressed">#ffffff</color>
+    <color name="dsps_file_label">#666</color>
+    <color name="dsps_file_value">#333</color>
+    <color name="dsps_progress_text">#347ab8</color>
+
+
+    <color name="fragment_event_background">#f0f0ff</color>
+    <color name="fragment_event_label">#666</color>
+    <color name="fragment_event_value">#333</color>
+    <color name="md_blue_grey_500">#607d8b</color>
+    <color name="md_grey_800">#424242</color>
 </resources>

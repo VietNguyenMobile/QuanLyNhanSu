@@ -1,3 +1,448 @@
 <resources>
     <string name="app_name">QuanLyNhanSu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dialog_semiconductor">Dialog Semiconductor</string>
+
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop_scan">Stop Scan</string>
+    <string name="menu_info">Information</string>
+    <string name="menu_filter">Filter</string>
+
+    <string name="activity_disclaimer">Disclaimer</string>
+    <string name="activity_scan_filter">Scan Filter</string>
+
+    <string name="empty_device_list">No devices found</string>
+    <string name="text_start_hint">Please press the SCAN button to search for devices.</string>
+
+    <string name="permission_rationale">SmartConsole needs access to location information in order to scan for Bluetooth Smart devices.</string>
+    <string name="location_permission_rationale">Access to location information is required in order to scan for Bluetooth Smart devices.</string>
+    <string name="storage_permission_rationale">Access to the device\'s storage is required in order to save log files.</string>
+    <string name="no_location_services_title">Location Services Disabled</string>
+    <string name="no_location_services_msg">It may be required to enable the Location Services on your device in order to scan for Bluetooth Smart devices.</string>
+    <string name="no_location_services_scan">Continue</string>
+    <string name="enable_location_services">Enable</string>
+
+    <string name="pref_category_signal">Signal</string>
+    <string name="pref_rssi_filter">Filter by RSSI</string>
+    <string name="pref_rssi_level">RSSI level</string>
+    <string name="pref_rssi_level_summary">%1$s db</string>
+    <string name="pref_rssi_level_dialog">RSSI level (db)</string>
+    <string name="pref_category_services">Services</string>
+    <string name="pref_codeless">CodeLess</string>
+    <string name="pref_dsps">DSPS</string>
+    <string name="pref_suota">SUOTA</string>
+    <string name="pref_other">Other Dialog</string>
+    <string name="pref_unknown">Unknown</string>
+    <string name="pref_category_beacons">Beacons</string>
+    <string name="pref_ibeacon">iBeacon</string>
+    <string name="pref_microsoft">Microsoft</string>
+    <string name="pref_category_pattern">Pattern</string>
+    <string name="pref_pattern_name">Device Name</string>
+    <string name="pref_pattern_name_dialog">Device name pattern</string>
+    <string name="pref_pattern_address">Device Address</string>
+    <string name="pref_pattern_address_dialog">Device address pattern</string>
+    <string name="pref_pattern_data">Advertising Data</string>
+    <string name="pref_pattern_data_dialog">Advertising data pattern</string>
+    <string name="invalid_pattern_message">Invalid pattern</string>
+
+    <string name="scan_signal">%1$d db</string>
+    <string name="scan_unknown">Unknown</string>
+    <string name="scan_codeless">CodeLess</string>
+    <string name="scan_dsps">DSPS</string>
+    <string name="scan_suota">SUOTA</string>
+    <string name="scan_iot">IoT</string>
+    <string name="scan_wearable">Wearable</string>
+    <string name="scan_mesh">Mesh</string>
+    <string name="scan_proximity">Proximity</string>
+    <string name="scan_beacon">iBeacon: %1$s %2$04x-%3$04x</string>
+    <string name="scan_microsoft">Microsoft</string>
+    <string name="not_available">N/A</string>
+
+    <string name="connecting_dialog_message">Connecting, please wait…</string>
+    <string name="device_disconnected">Device disconnected</string>
+    <string name="no_device_set">No device set</string>
+    <string name="not_supported_title">Services not supported</string>
+    <string name="not_supported_message">This device does not support the Dialog CodeLess or the Dialog DSPS service.</string>
+    <string name="mode_change_binary_title">Binary mode request</string>
+    <string name="mode_change_binary_message">The peer device requested to enter binary mode.</string>
+    <string name="mode_change_command_title">Binary mode exit request</string>
+    <string name="mode_change_command_message">The peer device requested to exit binary mode.</string>
+    <string name="mode_change_accept">Accept</string>
+    <string name="mode_change_reject">Reject</string>
+
+    <string name="drawer_codeless_console">AT Console</string>
+    <string name="drawer_codeless_device">System</string>
+    <string name="drawer_codeless_ble">Bluetooth</string>
+    <string name="drawer_codeless_peripherals">Peripherals</string>
+    <string name="drawer_codeless_events">Events</string>
+    <string name="drawer_codeless_data">Data</string>
+    <string name="drawer_dsps_console">Console</string>
+    <string name="drawer_dsps_read_transfer">Read/Transfer Data</string>
+    <string name="drawer_dsps_file">Data File Streaming</string>
+    <string name="drawer_information">Information</string>
+    <string name="drawer_disclaimer">Disclaimer</string>
+    <string name="drawer_disconnect">Disconnect</string>
+    <string name="drawer_mode_command">Command Mode</string>
+    <string name="drawer_mode_binary">Binary Mode</string>
+
+    <string name="menu_mode_command">AT+</string>
+    <string name="menu_mode_binary">DSPS</string>
+
+    <string name="entered_command_mode_msg">Entered command mode</string>
+    <string name="entered_binary_mode_msg">Entered binary mode</string>
+    <string name="gatt_operation_error_msg">Operation failed</string>
+    <string name="operation_not_allowed_msg">Operation not allowed</string>
+    <string name="invalid_prefix_msg">Invalid command prefix</string>
+    <string name="invalid_command_msg">Invalid command</string>
+    <string name="command_error_msg">Command failed</string>
+    <string name="command_error_info_msg">Command failed: %1$s</string>
+    <string name="command_not_supported_msg">Command not supported</string>
+    <string name="storage_permission_needed_msg">Storage permission needed</string>
+
+    <string name="menu_edit_bookmarks">Edit bookmarks</string>
+    <string name="menu_clear_history">Clear history</string>
+    <string name="codeless_enter_command_hint">Enter command…</string>
+    <string name="add_prefix_button_label">AT+</string>
+    <string name="clear_buffer_dialog_title">Clear buffer</string>
+    <string name="clear_buffer_dialog_msg">Are you sure?</string>
+    <string name="codeless_enter_script_hint">Enter script…</string>
+    <string name="start_script_button_label">Start</string>
+    <string name="stop_on_error_switch_label">Stop on error</string>
+    <string name="script_directory_empty_msg">Please put your scripts in folder \"%1$s\" on the device\'s storage</string>
+    <string name="clear_script_dialog_title">Clear script</string>
+    <string name="clear_script_dialog_msg">Are you sure?</string>
+    <string name="save_script_dialog_title">Save script</string>
+    <string name="save_script_dialog_label">Enter file name:</string>
+    <string name="save_script_success_msg">Script saved</string>
+    <string name="save_script_error_msg">Failed to save script</string>
+
+    <string name="device_info_label">Device:</string>
+    <string name="address_label">Address:</string>
+    <string name="software_revision_label">Version:</string>
+    <string name="battery_level_label">Battery:</string>
+    <string name="battery_level_value">%1$d%%</string>
+    <string name="rssi_label">RSSI:</string>
+    <string name="rssi_value">%1$d db</string>
+    <string name="rssi_value_peer">%1$d db / %2$d db</string>
+    <string name="mode_command">Command Mode</string>
+    <string name="mode_binary">Binary Mode</string>
+    <string name="send_bin_req_button_label">AT+BINREQ</string>
+    <string name="send_bin_ack_button_label">AT+BINREQACK</string>
+    <string name="send_bin_exit_button_label">AT+BINREQEXIT</string>
+    <string name="power_level_label">Power Level</string>
+    <string-array name="power_level_spinner_items">
+        <item>-19.5 dBm</item>
+        <item>-13.5 dBm</item>
+        <item>-10 dBm</item>
+        <item>-7 dBm</item>
+        <item>-5 dBm</item>
+        <item>-3.5 dBm</item>
+        <item>-2 dBm</item>
+        <item>-1 dBm</item>
+        <item>0 dBm</item>
+        <item>1 dBm</item>
+        <item>1.5 dBm</item>
+        <item>2.5 dBm</item>
+    </string-array>
+    <string name="sleep_button_label">Sleep</string>
+    <string name="awake_button_label">Awake</string>
+    <string name="cursor_button_label">Time Cursor</string>
+    <string name="reset_button_label">Reset Device</string>
+
+    <string name="tab_title_ble">Parameters</string>
+    <string name="tab_title_security">Security</string>
+
+    <string name="connection_parameters_label">Connection Parameters</string>
+    <string name="connection_interval_label">Connection Interval (x1.25ms)</string>
+    <string name="slave_latency_label">Slave Latency (events)</string>
+    <string name="supervision_timeout_label">Timeout (x10ms)</string>
+    <string-array name="connection_parameters_actions">
+        <item>Disable parameter update</item>
+        <item>Apply on next connection</item>
+        <item>Apply now only</item>
+        <item>Apply now and save</item>
+    </string-array>
+    <string name="max_mtu_label">Max MTU</string>
+    <string name="dle_label">Data Length Extension</string>
+    <string name="dle_tx_length_label">DLE TX Packet Length</string>
+    <string name="dle_rx_length_label">DLE RX Packet Length</string>
+    <string name="advertising_data_label">Advertising Data</string>
+    <string name="response_data_label">Response Data</string>
+
+    <string name="tab_title_gpio">GPIO</string>
+    <string name="tab_title_i2c">I2C</string>
+    <string name="tab_title_spi">SPI</string>
+    <string name="tab_title_misc">Misc.</string>
+    <string name="gpio_not_set">Not set</string>
+
+    <string name="read_gpio_config_button_label">Read</string>
+    <string name="reset_gpio_config_button_label">Reset</string>
+    <string name="reset_gpio_dialog_title">Reset GPIO configuration</string>
+    <string name="reset_gpio_dialog_msg">Are you sure?</string>
+    <string name="read_input_button_label">Read</string>
+    <string name="gpio_state_low">LOW</string>
+    <string name="gpio_state_high">HIGH</string>
+    <string name="write_output_low_button_label">Set LOW</string>
+    <string name="write_output_high_button_label">Set HIGH</string>
+    <string-array name="gpio_function_spinner_items">
+        <item>Undefined</item>
+        <item>Input</item>
+        <item>Input (pull-up)</item>
+        <item>Input (pull-down)</item>
+        <item>Output</item>
+        <item>Analog input</item>
+        <item>Analog input (atten.)</item>
+        <item>I2C CLK</item>
+        <item>I2C SDA</item>
+        <item>SPI CLK</item>
+        <item>SPI CS</item>
+        <item>SPI MOSI</item>
+        <item>SPI MISO</item>
+        <item>PWM</item>
+        <item>Heartbeat</item>
+        <item>Connection Ind. (high)</item>
+        <item>Connection Ind. (low)</item>
+        <item>UART TX</item>
+        <item>UART RX</item>
+        <item>UART CTS</item>
+        <item>UART RTS</item>
+    </string-array>
+    <integer-array name="gpio_function_spinner_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>24</item>
+        <item>27</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+
+    <string name="i2c_address_hint">Address</string>
+    <string name="i2c_scan_button_label">Scan</string>
+    <string name="i2c_scan_no_devices_msg">No devices found</string>
+    <string name="i2c_write_button_label">Write</string>
+    <string name="i2c_write_success_msg">Value written</string>
+    <string name="i2c_read_button_label">Read</string>
+    <string name="i2c_register_hint">Register</string>
+    <string name="i2c_write_value_hint">Value</string>
+    <string name="i2c_read_bytes_hint">Bytes</string>
+    <string name="i2c_gpio_label">GPIO</string>
+    <string name="i2c_scl_label">SCL</string>
+    <string name="i2c_sda_label">SDA</string>
+    <string name="i2c_configuration_label">Configuration</string>
+    <string name="i2c_address_size_label">Address size</string>
+    <string name="i2c_bitrate_label">Bitrate</string>
+    <string name="i2c_register_size_label">Register size</string>
+    <string-array name="address_size_spinner_items">
+        <item>7 bits</item>
+        <item>10 bits</item>
+    </string-array>
+    <string-array name="bitrate_spinner_items">
+        <item>100 kbps</item>
+        <item>400 kbps</item>
+    </string-array>
+    <string-array name="register_size_spinner_items">
+        <item>8 bits</item>
+        <item>16 bits</item>
+    </string-array>
+
+    <string name="spi_write_value_hint">Value</string>
+    <string name="spi_write_button_label">Write</string>
+    <string name="spi_write_success_msg">Value written</string>
+    <string name="spi_read_bytes_hint">Bytes</string>
+    <string name="spi_read_button_label">Read</string>
+    <string name="spi_transfer_value_hint">Value</string>
+    <string name="spi_transfer_button_label">Transfer</string>
+    <string name="spi_gpio_label">GPIO</string>
+    <string name="spi_clk_label">CLK</string>
+    <string name="spi_cs_label">CS</string>
+    <string name="spi_mosi_label">MOSI</string>
+    <string name="spi_miso_label">MISO</string>
+    <string name="spi_configuration_label">Configuration</string>
+    <string name="spi_clock_frequency_label">Clock</string>
+    <string name="spi_operation_mode">Mode</string>
+    <string name="spi_word_size_label">Word size</string>
+    <string-array name="clock_frequency_spinner_items">
+        <item>2 MHz</item>
+        <item>4 MHz</item>
+        <item>8 MHz</item>
+    </string-array>
+    <string-array name="operation_mode_spinner_items">
+        <item>SPI Mode 0</item>
+        <item>SPI Mode 1</item>
+        <item>SPI Mode 2</item>
+        <item>SPI Mode 3</item>
+    </string-array>
+    <string-array name="word_size_spinner_items">
+        <item>8 bits</item>
+    </string-array>
+    <string name="spi_not_supported_msg">SPI not supported</string>
+
+    <string name="misc_uart_label">UART</string>
+    <string name="misc_baud_rate_label">Baud Rate (bps)</string>
+    <string name="misc_uart_echo_label">Echo</string>
+    <string-array name="baud_rate_spinner_items">
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+    </string-array>
+    <string name="misc_flow_control_label">Flow Control</string>
+    <string name="misc_rts_label">RTS</string>
+    <string name="misc_cts_label">CTS</string>
+    <string name="misc_pwm_label">PWM</string>
+    <string name="misc_pwm_frequency_label">Frequency (Hz)</string>
+    <string name="misc_pwm_duty_cycle_label">Duty Cycle (%)</string>
+    <string name="misc_pwm_duration_label">Duration (ms)</string>
+    <string name="misc_pwm_start_msg">Pulse generated</string>
+    <string name="misc_pwm_gpio_label">GPIO</string>
+    <string name="misc_heartbeat_label">Heartbeat</string>
+    <string name="misc_heartbeat_gpio_label">GPIO</string>
+    <string name="misc_heartbeat_state_label">State</string>
+
+    <string name="fragment_event_commands_label">Commands</string>
+    <string name="fragment_event_command_slot">Slot:</string>
+    <string name="fragment_event_index_0">0</string>
+    <string name="fragment_event_index_1">1</string>
+    <string name="fragment_event_index_2">2</string>
+    <string name="fragment_event_index_3">3</string>
+    <string name="fragment_event_command_hint">Stored commands…</string>
+    <string name="fragment_event_timers_label">Timers</string>
+    <string name="fragment_event_index_label_0">0:</string>
+    <string name="fragment_event_index_label_1">1:</string>
+    <string name="fragment_event_index_label_2">2:</string>
+    <string name="fragment_event_index_label_3">3:</string>
+    <string name="fragment_event_timer_delay_hint">Delay (ms)</string>
+    <string-array name="timer_slot_spinner_items">
+        <item>Slot 0</item>
+        <item>Slot 1</item>
+        <item>Slot 2</item>
+        <item>Slot 3</item>
+    </string-array>
+    <string name="fragment_event_label_events">Events</string>
+    <string name="fragment_event_initialization_event_label">Initialization event</string>
+    <string name="fragment_event_connection_event_label">Connection event</string>
+    <string name="fragment_event_disconnection_event_label">Disconnection event</string>
+    <string name="fragment_event_wakeup_event_label">Wakeup event</string>
+    <string name="fragment_event_handlers_label">Handlers</string>
+    <string name="fragment_event_label_event">Event</string>
+    <string name="fragment_event_hint">Event commands…</string>
+    <string-array name="handler_event_spinner_items">
+        <item>Connection</item>
+        <item>Disconnection</item>
+        <item>Wakeup</item>
+    </string-array>
+
+    <string name="fragment_data_print_label">Print</string>
+    <string name="fragment_data_print_hint">Enter text…</string>
+    <string name="fragment_data_mem_label">Memory</string>
+    <string name="fragment_data_mem_0">0:</string>
+    <string name="fragment_data_mem_1">1:</string>
+    <string name="fragment_data_mem_2">2:</string>
+    <string name="fragment_data_mem_3">3:</string>
+    <string name="fragment_data_random_label">Random Number</string>
+    <string name="fragment_data_random_value">0x%1$08X (%1$d)</string>
+
+    <string name="fragment_security_mode_label">Mode</string>
+    <string name="fragment_security_pin_label">PIN</string>
+    <string name="fragment_security_bonding_database_label">Bonding database</string>
+    <string name="fragment_security_persistent_label">Persistent</string>
+    <string name="fragment_security_address_label">Address</string>
+    <string name="fragment_security_address_type_label">Type</string>
+    <string name="fragment_security_authentication_level_label">Authentication Level</string>
+    <string name="fragment_security_key_size_label">Key size</string>
+    <string name="fragment_security_slot_label">Slot</string>
+    <string name="fragment_security_persistence_status_label">Persistence status</string>
+    <string name="fragment_security_timestamp_label">Timestamp</string>
+    <string name="fragment_security_ltk_label">LTK</string>
+    <string name="fragment_security_ediv_label">EDIV</string>
+    <string name="fragment_security_rand_label">RAND</string>
+    <string name="fragment_security_csrk_label">CSRK</string>
+    <string name="fragment_security_irk_label">IRK</string>
+    <string-array name="security_mode_items">
+        <item>LE pairing</item>
+        <item>Legacy pairing</item>
+        <item>Just works</item>
+        <item>No security</item>
+    </string-array>
+    <string-array name="database_slot_items">
+        <item>Slot 1</item>
+        <item>Slot 2</item>
+        <item>Slot 3</item>
+        <item>Slot 4</item>
+        <item>Slot 5</item>
+    </string-array>
+
+    <string name="clear_database_dialog_title">Clear database</string>
+    <string name="clear_entry_dialog_title">Clear database entry</string>
+    <string name="clear_entry_dialog_msg">Are you sure?</string>
+    <string name="entry_list_title">Saved database entries</string>
+    <string name="save_entry_dialog_title">Save database entry</string>
+    <string name="save_entry_dialog_label">Enter file name:</string>
+    <string name="save_entry_success_msg">Entry saved</string>
+    <string name="save_entry_error_msg">Failed to save entry</string>
+    <string name="entries_directory_empty_msg">Please put your database entries in folder \"%1$s\" on the device\'s storage</string>
+
+    <string name="receive_console_mode_data_label">Receive Console Mode Data</string>
+    <string name="send_console_mode_data_label">Send Console Mode Data</string>
+    <string name="dsps_echo_label">Echo</string>
+    <string name="dsps_display_label">Display</string>
+    <string name="dsps_rx_speed_not_available">Speed: N/A</string>
+    <string name="dsps_rx_speed">Speed: %1$d B/s</string>
+    <string name="interval_label">Cyclic interval (ms)</string>
+    <string name="interval_value">200</string>
+    <string name="ascii">ASCII</string>
+    <string name="hex">HEX</string>
+    <string name="clear_button_label">Clear</string>
+    <string name="stop_button_label">Stop</string>
+    <string name="start_button_label">Start</string>
+    <string name="send_button_label">Send</string>
+    <string name="hide_button_label">Hide</string>
+    <string name="file_name_label">File name</string>
+    <string name="file_name_hint">Touch to select file</string>
+    <string name="file_size_label">Size</string>
+    <string name="file_crc_label">CRC</string>
+    <string name="chunk_size_label">Chunk size</string>
+    <string name="file_interval_label">Interval (ms)</string>
+    <string name="dsps_pattern_label">Pattern</string>
+    <string name="dsps_chunk_size">Chunk size: %1$d</string>
+    <string name="dsps_interval">Interval: %1$d ms</string>
+    <string name="percent">&#x0025;</string>
+    <string name="progress_start">0</string>
+    <string name="send_chunk">Sending chunk %1$d of %2$d</string>
+    <string name="received_bytes">Received %1$d of %2$d bytes</string>
+    <string name="waiting_for_header">Waiting for header…</string>
+    <string name="file_crc_ok">OK</string>
+    <string name="file_crc_error">CRC error</string>
+    <string name="file_crc_error_msg">File CRC error</string>
+    <string name="dsps_speed_curr">Speed: %1$d B/s</string>
+    <string name="dsps_speed_avg">Avg: %1$d B/s</string>
+    <string name="tab_title_file_send">Send</string>
+    <string name="tab_title_fiie_receive">Receive</string>
+    <string name="file_receive_header_title">Header format</string>
+    <string name="file_receive_header_msg"><![CDATA[Name: <file_name> (no whitespace)\nSize: <n> (bytes)\nCRC: <hex> (CRC-32, optional)\nEND (header end mark)\n… <n> bytes of data …]]></string>
+
+    <string name="invalid_hex_digit_count">Invalid hex digit count</string>
+    <string name="select_file">Select a file</string>
+    <string name="dsps_file_error_msg">Failed to load file</string>
 </resources>
