@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Quản lý nhân sự"
+        android:textSize="30sp"
+        android:textColor="#8BC34A"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software of My Company"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Phòng Ban"
+            android:id="@+id/btnPhongBan"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_apartment"
+            android:layout_marginEnd="10dp"
+            />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Nhân Sự"
+            android:id="@+id/btnNhanSu"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textColor="#0077FF"
+            android:drawableTop="@drawable/ic_groups"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Thoát"
+        android:id="@+id/btnThoat"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+        />
+
+</LinearLayout>
